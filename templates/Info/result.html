@@ -14,9 +14,11 @@
     <tr>
     <td>{{ Leadname }}</td>
     <td>
-    {% for y in Followups %}
-    <p>{{ y.0 }} {{ y.1 }}</p><br>
-    {% endfor %}    
+
+        {% for y in Followups %}
+            <p>{{ y.0 }} {{ y.1 }}<p>
+        {% endfor %}    
+         
     </td>    
     </tr>
     </table>

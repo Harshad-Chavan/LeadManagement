@@ -13,7 +13,7 @@ def Result(request):
         id = request.POST.get("id")
         print(id)
         leadobj = Lead.objects.get(ContactPersonName = id)
-        Leadname = leadobj.ContactPersonName
+        Leadname = leadobj.ContactPersonName 
         followupobj = Followup.objects.filter(Lead_id = leadobj.id)
         followups = [ (val["Response"],val["DateOfFollowup"]) for val in followupobj.values()]
         return render(request,"Info/result.html",{'Leadname':Leadname, "Followups":followups})
