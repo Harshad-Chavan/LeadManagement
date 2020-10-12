@@ -1,3 +1,2 @@
 # LeadManagement
 
-Homepage : /info/
